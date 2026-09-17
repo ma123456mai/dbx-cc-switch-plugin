@@ -12,7 +12,13 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - name: Checkout DBX Rust SDK
+        uses: actions/checkout@v4
+        with:
+          repository: t8y2/dbx
+          ref: main
+          path: .dbx-plugin-sdk
       - uses: dtolnay/rust-toolchain@stable
       - name: Run plugin tests
         working-directory: backend
-        run: cargo test --locked
+        run: cargo test --locked --config 'patch.crates-io.dbx-plugin-sdk.path="../.dbx-plugin-sdk/plugins/sdk/rust/dbx-plugin-sdk"'
