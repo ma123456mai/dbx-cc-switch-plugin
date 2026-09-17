@@ -1,0 +1,18 @@
+name: Test CC-SWITCH plugin
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Run plugin tests
+        working-directory: backend
+        run: cargo test --locked
