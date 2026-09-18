@@ -127,7 +127,7 @@ impl PluginHandler for Importer {
 }
 
 fn main() -> std::io::Result<()> {
-    PluginServer::new(PluginMetadata::new("cc-switch", "0.1.0").with_capability("ai-config-import"), Importer).serve()
+    PluginServer::new(PluginMetadata::new("cc-switch", "0.1.1").with_capability("ai-config-import"), Importer).serve()
 }
 
 fn import_from_path(path: &Path) -> Result<ImportResult, String> {

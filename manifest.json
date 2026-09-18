@@ -3,7 +3,7 @@
   "manifest_version": 1,
   "id": "cc-switch",
   "name": "CC-SWITCH Config Import",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "ma123456mai",
   "description": "Import AI provider configurations from the local CC-SWITCH database.",
   "source": "https://github.com/ma123456mai/dbx-cc-switch-plugin",
