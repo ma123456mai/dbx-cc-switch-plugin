@@ -16,4 +16,4 @@ jobs:
       package-path: dist/*.dbxp
       metadata-path: dist/*.artifact.json
       install-plugin-cli-from-source: true
-      sdk-ref: a0937c2
+      sdk-ref: refs/pull/9365/head
