@@ -6,5 +6,4 @@ directory = "backend"
 binary = "cc-switch-importer"
 
 [package]
-include = []
-
+include = ["assets"]

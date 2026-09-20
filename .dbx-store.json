@@ -1,0 +1,17 @@
+{
+  "name": "CC-SWITCH Config Import",
+  "description": "Import AI provider configurations from the local CC-SWITCH database into DBX.",
+  "icon": "assets/plugin.png",
+  "tags": ["ai", "configuration", "cc-switch"],
+  "permissions": [],
+  "source": "https://github.com/ma123456mai/dbx-cc-switch-plugin",
+  "homepage": "https://github.com/ma123456mai/dbx-cc-switch-plugin",
+  "license": "Apache-2.0",
+  "releaseNotes": "Add the official CC-SWITCH icon and register the plugin for DBX Store automation.",
+  "localizations": {
+    "zh-CN": {
+      "name": "CC-SWITCH 配置导入",
+      "description": "将本机 CC-SWITCH 数据库中的 AI 提供商配置导入 DBX。"
+    }
+  }
+}
